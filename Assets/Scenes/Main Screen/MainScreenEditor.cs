@@ -17,11 +17,11 @@ public class MainScreen : MonoBehaviour
         Button playButton = uiDocument.rootVisualElement.Query<Button>("PlayButton");
         Button settingsButton = uiDocument.rootVisualElement.Query<Button>("SettingsButton");
 
-        playButton.RegisterCallback<ClickEvent>(clickedEvent => LoadScene(clickedEvent, "SampleScene"));
-        settingsButton.RegisterCallback<ClickEvent>(clickedEvent => LoadScene(clickedEvent, "settingsScene"));
+        playButton.RegisterCallback<ClickEvent>(_ => LoadScene("SampleScene"));
+        settingsButton.RegisterCallback<ClickEvent>(_ => LoadScene("settingsScene"));
     }
 
-    private void LoadScene(ClickEvent clickEvent, String scene){
+    private void LoadScene(string scene){
         Debug.Log("Loading Scene " + scene);
         SceneManager.LoadScene(scene);
     }
