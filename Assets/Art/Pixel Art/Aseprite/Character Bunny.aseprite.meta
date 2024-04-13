@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5327b1beb97e5ab48a35f3f1fea74b8c
+guid: 31e8cb77fdc41834c84f441ed48fcfee
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638485927921836182
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Card Animation_Frame_0
+  - name: Character Bunny_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49285716, y: -0.62499994}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 19
-      y: 4
-      width: 5
-      height: 7
-    spriteID: 664da2c33a7a2414e83ffa73e46908c2
+      x: 4
+      y: 206
+      width: 140
+      height: 80
+    spriteID: 4e5a2342b4872dc40af8008ab9420139
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 19, y: 4}
-  - name: Card Animation_Frame_1
+    uvTransform: {x: 4, y: 206}
+  - name: Character Bunny_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49999997, y: -0.5376344}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 7
-      height: 7
-    spriteID: 08f04f38cfb397f429361b19178a8759
+      width: 142
+      height: 93
+    spriteID: 64d5b529b9193b446b17e13923683d91
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,38 +161,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Card Animation_Frame_2
+  - name: Character Bunny_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -0.2}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 19
-      y: 19
-      width: 7
-      height: 5
-    spriteID: 3a0aa27de8f46bf4684459654fcb3e64
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 19, y: 19}
-  - name: Card Animation_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49999997, y: -0.5376344}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 19
-      width: 7
-      height: 7
-    spriteID: b89079a97405320449372b705b5f1019
+      y: 105
+      width: 142
+      height: 93
+    spriteID: c095e20758eb3f34eb95751da53c8155
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,52 +180,68 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 19}
+    uvTransform: {x: 4, y: 105}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2104453546
-    name: Card Animation
+    guid: 2047892435
+    name: Character Bunny
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Card Animation_Frame_0
+    - name: Character Bunny_Frame_0
       frameIndex: 0
       cellRect:
-        x: 1
-        y: 0
-        width: 5
-        height: 7
-      spriteId: 664da2c33a7a2414e83ffa73e46908c2
-    - name: Card Animation_Frame_1
+        x: 3
+        y: 50
+        width: 140
+        height: 80
+      spriteId: 4e5a2342b4872dc40af8008ab9420139
+    - name: Character Bunny_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
-        y: 0
-        width: 7
-        height: 7
-      spriteId: 08f04f38cfb397f429361b19178a8759
-    - name: Card Animation_Frame_2
+        x: 1
+        y: 50
+        width: 142
+        height: 93
+      spriteId: 64d5b529b9193b446b17e13923683d91
+    - name: Character Bunny_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
-        y: 1
-        width: 7
-        height: 5
-      spriteId: 3a0aa27de8f46bf4684459654fcb3e64
-    - name: Card Animation_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 7
-        height: 7
-      spriteId: b89079a97405320449372b705b5f1019
+        x: 1
+        y: 50
+        width: 142
+        height: 93
+      spriteId: c095e20758eb3f34eb95751da53c8155
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 7, y: 7}
+  canvasSize: {x: 144, y: 144}
