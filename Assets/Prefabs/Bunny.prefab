@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6380403420482559262}
   animator: {fileID: 8976590009926998318}
-  speed: 5
+  speed: 6
   isCardAbilityEnabled: 1
   cardTimer: 0
   cardCooldown: 0.5
