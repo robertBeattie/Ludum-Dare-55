@@ -5689,6 +5689,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1481737902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4003746265456068363, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
+  m_PrefabInstance: {fileID: 3061238530347864946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1571781304
 GameObject:
   m_ObjectHideFlags: 0
@@ -18616,6 +18621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scarf Grabber
       objectReference: {fileID: 0}
+    - target: {fileID: 5694703454230795058, guid: 02dd8c570113d36449f6d36533e2b257, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8368267379522443783, guid: 02dd8c570113d36449f6d36533e2b257, type: 3}
       propertyPath: m_Parameters.textureMode
       value: 1
@@ -18672,6 +18681,10 @@ PrefabInstance:
       propertyPath: scarf
       value: 
       objectReference: {fileID: 248906355}
+    - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
+      propertyPath: hatSprite
+      value: 
+      objectReference: {fileID: 97141129}
     - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
       propertyPath: cardSpawnPoint
       value: 
@@ -18800,6 +18813,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: b7bc5193ea60e4544bdb16813451d921, type: 2}
     - target: {fileID: 6571786533490825204, guid: 70e96e843baea1c43aad743af61807de, type: 3}
       propertyPath: player
+      value: 
+      objectReference: {fileID: 1481737902}
+    - target: {fileID: 6571786533490825204, guid: 70e96e843baea1c43aad743af61807de, type: 3}
+      propertyPath: playerTransform
       value: 
       objectReference: {fileID: 99944494}
     m_RemovedComponents: []

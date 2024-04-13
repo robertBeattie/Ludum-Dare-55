@@ -57,4 +57,8 @@ public class PlayerAnimator : MonoBehaviour
             idleTimer += Time.deltaTime;
         }
     }
+
+    private void OnEnable() {
+        animator.Play(current_state);
+    }
 }
