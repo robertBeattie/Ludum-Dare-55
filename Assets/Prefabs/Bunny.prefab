@@ -77,6 +77,13 @@ MonoBehaviour:
   rb: {fileID: 6380403420482559262}
   animator: {fileID: 8976590009926998318}
   speed: 5
+  isCardAbilityEnabled: 1
+  cardTimer: 0
+  cardCooldown: 0.5
+  cardSpawnPoint: {fileID: 8422823289742518474}
+  redCardPrefab: {fileID: 4461893310673693214, guid: 7d030cb71839d424a88ccdeb51affb70, type: 3}
+  blackCardPrefab: {fileID: 7363148508743398491, guid: a65f42f8493b18a438495d14e5b5dc89, type: 3}
+  cardSpeed: 10
 --- !u!1 &4811389113023217027
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5304529038545477657}
   spriteRenderer: {fileID: 1564941255992540375}
+  idleTimer: 0
+  idleTimeMax: 2.1
 --- !u!1 &5162618392738951803
 GameObject:
   m_ObjectHideFlags: 0

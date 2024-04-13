@@ -101,7 +101,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6165573796975491134}
-    m_Position: {x: 335, y: 295, z: 0}
+    m_Position: {x: 520, y: 140, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -141,7 +141,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bunny_walk2
+  m_Name: Bunny_Walk2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

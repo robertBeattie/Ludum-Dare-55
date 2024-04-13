@@ -206,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 837512470}
     - target: {fileID: 8852796708336562460, guid: 8bbee8ae72078704196330484567a9d1, type: 3}
       propertyPath: m_ConfineScreenEdges
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -295,6 +295,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &791935277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 912050957915206089, guid: 70e96e843baea1c43aad743af61807de, type: 3}
+  m_PrefabInstance: {fileID: 6305633024992649486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837512469
 GameObject:
   m_ObjectHideFlags: 0
@@ -10917,6 +10922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bunny
       objectReference: {fileID: 0}
+    - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
+      propertyPath: cardSpawnPoint
+      value: 
+      objectReference: {fileID: 791935277}
     - target: {fileID: 8422823289742518474, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
