@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CardProjectile : MonoBehaviour
 {
+    LayerMask ColliderLayer;
     void Start()
     {
         Destroy(gameObject, 5f);
@@ -12,6 +13,9 @@ public class CardProjectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collided with " + other.name);
-        
+        if(ColliderLayer.value == (ColliderLayer.value | (1 << other.gameObject.layer)))
+        {
+            Destroy(gameObject);
+        }
     }
 }

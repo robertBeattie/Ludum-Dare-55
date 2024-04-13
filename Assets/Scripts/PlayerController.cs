@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject blackCardPrefab;
     [SerializeField] float cardSpeed = 10f;
 
+    [Header("Scarf Grab Ability")]
+    [SerializeField] bool isScarfGrabAbilityEnabled = true;
+    [SerializeField] Transform scarf;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
 
         if(Input.GetMouseButtonDown(0) && isCardAbilityEnabled && cardTimer <= cardCooldown){
+            if(cardSpawnPoint == null) return;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)cardSpawnPoint.position).normalized;
             
@@ -36,5 +41,11 @@ public class PlayerController : MonoBehaviour
             cardTimer = cardCooldown;
         }
         cardTimer -= Time.deltaTime;
+
+        if(Input.GetMouseButtonDown(1) && isScarfGrabAbilityEnabled){
+            if(scarf == null) return;
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            scarf.position = mousePos;
+        }
     }
 }
