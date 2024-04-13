@@ -47,5 +47,9 @@ public class PlayerController : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             scarf.position = mousePos;
         }
+
+        if(Input.GetButtonDown("Jump")){
+            Debug.Log("Jumping into Hat");
+        }
     }
 }
