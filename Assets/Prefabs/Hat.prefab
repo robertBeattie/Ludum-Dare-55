@@ -59,7 +59,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3363811447550468006}
   - component: {fileID: 3981023409267460877}
-  - component: {fileID: 2077866323129672250}
   - component: {fileID: 4389480679023676248}
   m_Layer: 0
   m_Name: Sprite
@@ -135,21 +134,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &2077866323129672250
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4791965947436139331}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 03fea631ac06e07449a533e6370b08ce, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &4389480679023676248
 Animator:
   serializedVersion: 5
