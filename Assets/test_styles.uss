@@ -1,0 +1,10 @@
+.ui-button {
+    max-width: 500px;
+    align-self: stretch;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(228, 238, 246);
+}
