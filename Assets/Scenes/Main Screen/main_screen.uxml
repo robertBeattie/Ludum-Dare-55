@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/Main%20Screen/main_screen.uss?fileID=7433441132597879392&amp;guid=e41a0030ca3096e44bf5af2e9dcece55&amp;type=3#main_screen" />
+    <ui:GroupBox name="Container" style="justify-content: center; align-self: center; align-items: center; width: 100%; height: 100%; flex-grow: 1; flex-direction: column; flex-wrap: nowrap; opacity: 1;">
+        <ui:Label tabindex="-1" text="Some Game Title" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center;" />
+        <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" class="ui-button" style="align-self: auto;" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="ui-button" style="white-space: nowrap;" />
+    </ui:GroupBox>
+</ui:UXML>
