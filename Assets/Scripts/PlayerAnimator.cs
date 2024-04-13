@@ -38,7 +38,7 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] float idleTimer = 0;
     [SerializeField] float idleTimeMax = 2.1f;
     void PickRandomIdle(){
-        Debug.Log("Picking random idle");
+        //Debug.Log("Picking random idle");
         int RandomIdle = Random.Range(0, 3);
         if(RandomIdle == 0){
             SetState(PLAYER_IDLE1);

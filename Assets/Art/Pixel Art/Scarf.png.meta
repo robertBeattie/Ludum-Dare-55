@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e681c81320d77a842a9ea2a1deb8e03a
+guid: 429e57bb4b8bac94dafdd757b04ebb45
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,55 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hat Character_0
+      name: Scarf_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 128
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03ed49efb92115c4a981a915bbb5ac96
-      internalID: -1702077878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hat Character_1
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 138
-        width: 13
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d9668fb0d433254fa688cb0082a1c49
-      internalID: 538647365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Star 3
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 135
-        width: 9
-        height: 9
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad8e085903b16d4aaf8fb83966f7063
-      internalID: 1607187091
+      spriteID: a6167b07c0a9ca348b94d599216445b3
+      internalID: -881807036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Star 2
+      name: Scarf_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 16
         y: 128
-        width: 8
-        height: 7
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b7ed0341ef1f3449bb82dc4a4a8f401
-      internalID: -297411436
+      spriteID: 6962727052301af4f905e17efb97b512
+      internalID: 128333663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Star 1
+      name: Scarf_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 139
-        width: 5
-        height: 4
+        x: 4
+        y: 110
+        width: 10
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06f76a5196030bb4297f1bfb5c9fa540
-      internalID: 850810878
+      spriteID: 7660e1235c2cf3d4b933c0448a023926
+      internalID: -2088060431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scarf_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f01e98406c9c43b059462915597e9
+      internalID: -122135342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scarf_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 74
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cf467e91846784d88922805325e349
+      internalID: -2146312676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scarf_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 56
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc248a7e369f065468f4cdb8c81f5d28
+      internalID: -254151554
       vertices: []
       indices: 
       edges: []
@@ -212,11 +233,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hat Character_0: -1702077878
-      Hat Character_1: 538647365
-      Star 1: 850810878
-      Star 2: -297411436
-      Star 3: 1607187091
+      Scarf_0: -881807036
+      Scarf_1: 128333663
+      Scarf_2: -2088060431
+      Scarf_3: -122135342
+      Scarf_4: -2146312676
+      Scarf_5: -254151554
+      Scarf_6: -1303163568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
