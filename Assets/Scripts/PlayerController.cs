@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject redCardPrefab;
     [SerializeField] GameObject blackCardPrefab;
     [SerializeField] float cardSpeed = 10f;
+    [SerializeField] Transform hatSprite;
 
     [Header("Scarf Grab Ability")]
     [SerializeField] bool isScarfGrabAbilityEnabled = true;
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour
             if(cardSpawnPoint == null) return;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)cardSpawnPoint.position).normalized;
-            
+            hatSprite.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, (mousePos - (Vector2) hatSprite.position).normalized));
             GameObject card = Instantiate(Random.Range(0,2) == 1 ? redCardPrefab : blackCardPrefab, cardSpawnPoint.position, Quaternion.identity);
             card.GetComponent<Rigidbody2D>().velocity = direction * cardSpeed;
 
