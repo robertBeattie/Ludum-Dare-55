@@ -13,8 +13,12 @@ public class CardProjectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Collided with " + other.name);
+
         if(ColliderLayer.value == (ColliderLayer.value | (1 << other.gameObject.layer)))
         {
+            if(other.gameObject.CompareTag("Enemy")){
+                other.GetComponent<FlashEffect>().Flash();
+            }
             Destroy(gameObject);
         }
     }
