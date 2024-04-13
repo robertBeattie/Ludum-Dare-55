@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CardProjectile : MonoBehaviour
 {
-    LayerMask ColliderLayer;
+    [SerializeField] LayerMask ColliderLayer;
     void Start()
     {
         Destroy(gameObject, 5f);
