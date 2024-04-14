@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Scenes/Main%20Screen/main_screen.uss?fileID=7433441132597879392&amp;guid=e41a0030ca3096e44bf5af2e9dcece55&amp;type=3#main_screen" />
     <ui:GroupBox name="Container" style="justify-content: center; align-self: center; align-items: center; width: 100%; height: 100%; flex-grow: 1; flex-direction: column; flex-wrap: nowrap; opacity: 1;">
-        <ui:Label tabindex="-1" text="Some Game Title" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center;" />
+        <ui:Label tabindex="-1" text="Some Game Title" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center; -unity-font: url(&quot;project://database/Assets/Fonts/minecraftia/Minecraftia-Regular.ttf?fileID=12800000&amp;guid=f8e2fdf410abc2c43b778d32471f2edd&amp;type=3#Minecraftia-Regular&quot;); -unity-font-definition: initial; font-size: 48px; -unity-text-align: middle-center; padding-bottom: 33px; color: rgb(160, 134, 98); -unity-text-outline-width: 2px; -unity-text-outline-color: rgb(66, 57, 52);" />
         <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" class="ui-button" style="align-self: auto;" />
-        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="ui-button" style="white-space: nowrap;" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="ui-button" style="white-space: nowrap; display: none; visibility: hidden;" />
     </ui:GroupBox>
 </ui:UXML>

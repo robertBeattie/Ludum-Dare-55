@@ -2,10 +2,20 @@
     max-width: 500px;
     align-self: auto;
     justify-content: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-color: rgb(228, 238, 246);
     align-items: auto;
+    margin-bottom: 24px;
+    -unity-font: url("project://database/Assets/Fonts/minecraftia/Minecraftia-Regular.ttf?fileID=12800000&guid=f8e2fdf410abc2c43b778d32471f2edd&type=3#Minecraftia-Regular");
+    -unity-font-definition: initial;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    font-size: 24px;
+    -unity-text-align: middle-center;
+    -unity-font-style: normal;
 }
