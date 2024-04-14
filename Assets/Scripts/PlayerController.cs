@@ -22,6 +22,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool isScarfGrabAbilityEnabled = true;
     [SerializeField] Transform scarf;
 
+    [Header("Jump Into Hat Ability")]
+    [SerializeField] bool isJumpIntoHatAbilityEnabled = true;
+    [SerializeField] GameObject rainbowPrefab;
+    [SerializeField] Transform hatTransform;
+    [SerializeField] float rainbowSpeed = 5f;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -47,5 +54,27 @@ public class PlayerController : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             scarf.position = mousePos;
         }
+
+        if(Input.GetMouseButtonDown(2) && isJumpIntoHatAbilityEnabled){
+            if(hatTransform == null) return;
+            GameObject rainbow = Instantiate(rainbowPrefab, transform.position, Quaternion.identity);
+
+            // Calculate the direction towards the hat
+            Vector3 direction = (hatTransform.position - transform.position).normalized;
+            
+            // Rotate the rainbow to align with the direction
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            rainbow.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+            // Move the rainbow towards the hat
+            rainbow.GetComponent<Rigidbody2D>().velocity = direction * rainbowSpeed;
+            
+            //Make Bunny Invisible
+
+            // Destroy the rainbow after reaching the hat
+            Destroy(rainbow, Vector3.Distance(transform.position, hatTransform.position) / rainbowSpeed);
+        }
     }
+
+
 }

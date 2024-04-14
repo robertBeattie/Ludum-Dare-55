@@ -18411,6 +18411,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 248906355}
     - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
+      propertyPath: hatTransform
+      value: 
+      objectReference: {fileID: 791935277}
+    - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
+      propertyPath: rainbowPrefab
+      value: 
+      objectReference: {fileID: 6836103453865497254, guid: 167b78a08ee63d84d8eacad04184df8b, type: 3}
+    - target: {fileID: 4759719665284112482, guid: 8d29f9356898b43449c2cd11067b1ba3, type: 3}
       propertyPath: cardSpawnPoint
       value: 
       objectReference: {fileID: 791935277}
