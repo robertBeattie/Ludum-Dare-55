@@ -12,13 +12,11 @@ public class AudioController : MonoBehaviour
 
     void Awake() {
         if (Instance != null) {
-            Debug.Log("Found duplicate AudioController...destroying");
             Destroy(gameObject);
             return;
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("Initialized AudioController");
     }
 
     void Start()
