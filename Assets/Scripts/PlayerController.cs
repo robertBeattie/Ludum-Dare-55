@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     [Header("Scarf Grab Ability")]
     [SerializeField] bool isScarfGrabAbilityEnabled = true;
     [SerializeField] Transform scarf;
-
+    [SerializeField] ScarfGrabber scarfGrabber;
+ 
     // Update is called once per frame
     void Update()
     {
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
             if(scarf == null) return;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             scarf.position = mousePos;
+            scarfGrabber.GrabScarf();
         }
     }
 }
