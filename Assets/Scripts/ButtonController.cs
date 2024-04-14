@@ -22,8 +22,11 @@ public class ButtonController : MonoBehaviour
         if(ColliderLayer.value != (ColliderLayer.value | (1 << other.gameObject.layer))) {
             return;
         }
-
-        if(other.transform.parent.gameObject.Equals(player) || other.gameObject.GetType().IsSubclassOf(typeof(ScarfGrabber)) ) {
+        if(other == null) {
+            Debug.Log("OTHER IS NULL");
+            return;
+        }
+        if(other.GetComponent<ScarfGrabber>() != null  ||  other.tag == "PlayerCollider") {
             Debug.Log("COLLISION!");
             spriteRenderer.sprite = spriteDown;
         } else {
@@ -36,8 +39,11 @@ public class ButtonController : MonoBehaviour
         if(ColliderLayer.value != (ColliderLayer.value | (1 << other.gameObject.layer))) {
             return;
         }
-        
-        if(other.transform.parent.gameObject.Equals(player) || other.gameObject.GetType().IsSubclassOf(typeof(ScarfGrabber)) ) {
+        if(other == null) {
+            Debug.Log("OTHER IS NULL");
+            return;
+        }
+        if(other.GetComponent<ScarfGrabber>() != null || other.tag == "PlayerCollider") {
             Debug.Log("COLLISION ENDED!");
             spriteRenderer.sprite = spriteUp;
         } else {
