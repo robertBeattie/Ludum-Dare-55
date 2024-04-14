@@ -47,8 +47,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(1) && isScarfGrabAbilityEnabled){
             if(scarf == null) return;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            scarf.position = mousePos;
-            scarfGrabber.GrabScarf();
+            scarfGrabber.GrabScarf((mousePos - (Vector2)hatSprite.position).normalized);
         }
     }
 

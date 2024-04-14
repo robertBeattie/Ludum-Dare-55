@@ -338,6 +338,11 @@ MonoBehaviour:
   hatSprite: {fileID: 0}
   glove: {fileID: 8439287576139793072}
   glovePoint: {fileID: 1178386706599288201}
-  spriteRenderer: {fileID: 3936065917381812017}
+  spriteHandRenderer: {fileID: 3936065917381812017}
   lineRenderer: {fileID: 8368267379522443783}
   LinkCount: 4
+  GrabSprite: {fileID: 128333663, guid: 429e57bb4b8bac94dafdd757b04ebb45, type: 3}
+  OpenSprite: {fileID: -881807036, guid: 429e57bb4b8bac94dafdd757b04ebb45, type: 3}
+  ColliderLayer:
+    serializedVersion: 2
+    m_Bits: 1024
