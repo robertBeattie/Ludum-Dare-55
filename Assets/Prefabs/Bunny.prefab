@@ -80,10 +80,14 @@ MonoBehaviour:
   isCardAbilityEnabled: 1
   cardTimer: 0
   cardCooldown: 0.5
-  cardSpawnPoint: {fileID: 8422823289742518474}
+  cardSpawnPoint: {fileID: 0}
   redCardPrefab: {fileID: 4461893310673693214, guid: 7d030cb71839d424a88ccdeb51affb70, type: 3}
   blackCardPrefab: {fileID: 7363148508743398491, guid: a65f42f8493b18a438495d14e5b5dc89, type: 3}
   cardSpeed: 10
+  hatSprite: {fileID: 0}
+  isScarfGrabAbilityEnabled: 1
+  scarf: {fileID: 0}
+  scarfGrabber: {fileID: 0}
 --- !u!1 &4811389113023217027
 GameObject:
   m_ObjectHideFlags: 0

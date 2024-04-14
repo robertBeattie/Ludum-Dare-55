@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
 
         if(Input.GetMouseButtonDown(0) && isCardAbilityEnabled && cardTimer <= cardCooldown){
-            if(cardSpawnPoint == null) return;
+            if(cardSpawnPoint == null || hatSprite == null) return;
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)cardSpawnPoint.position).normalized;
             hatSprite.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.up, (mousePos - (Vector2) hatSprite.position).normalized));
@@ -51,4 +51,6 @@ public class PlayerController : MonoBehaviour
             scarfGrabber.GrabScarf();
         }
     }
+
+    
 }
