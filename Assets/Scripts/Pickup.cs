@@ -6,7 +6,8 @@ public class Pickup : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider) {
         if(collider.tag == "PlayerCollider") {
-            Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+            //Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+            objectToSpawn.SetActive(true);
             Destroy(gameObject);
         }
     }

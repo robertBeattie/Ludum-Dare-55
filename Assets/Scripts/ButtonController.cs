@@ -1,7 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+
+
+[Serializable]
+public class MyEvent : UnityEvent<string,GameObject> {}
 
 public class ButtonController : MonoBehaviour
 {
@@ -16,6 +22,9 @@ public class ButtonController : MonoBehaviour
     [SerializeField] Sprite spriteUp;
     [SerializeField] Sprite spriteDown;
 
+    public MyEvent OnButtonPressed;
+    public MyEvent OnButtonReleased;
+
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other) {
 
@@ -23,14 +32,15 @@ public class ButtonController : MonoBehaviour
             return;
         }
         if(other == null) {
-            Debug.Log("OTHER IS NULL");
+            //Debug.Log("OTHER IS NULL");
             return;
         }
         if(other.GetComponent<ScarfGrabber>() != null  ||  other.tag == "PlayerCollider") {
-            Debug.Log("COLLISION!");
+            //Debug.Log("COLLISION!");
+            OnButtonPressed.Invoke("ButtonPressed",gameObject);
             spriteRenderer.sprite = spriteDown;
         } else {
-            Debug.Log("NOT PLAYER OR SCARF GRABBER");
+            //Debug.Log("NOT PLAYER OR SCARF GRABBER");
         }
     }
 
@@ -40,14 +50,15 @@ public class ButtonController : MonoBehaviour
             return;
         }
         if(other == null) {
-            Debug.Log("OTHER IS NULL");
+            //Debug.Log("OTHER IS NULL");
             return;
         }
         if(other.GetComponent<ScarfGrabber>() != null || other.tag == "PlayerCollider") {
-            Debug.Log("COLLISION ENDED!");
+            //Debug.Log("COLLISION ENDED!");
+            OnButtonReleased.Invoke("ButtonReleased",gameObject);
             spriteRenderer.sprite = spriteUp;
         } else {
-            Debug.Log("NOT PLAYER OR SCARF GRABBER ENDED");
+            //Debug.Log("NOT PLAYER OR SCARF GRABBER ENDED");
         }
     }
 }
